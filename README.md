@@ -1,7 +1,7 @@
-## 🧠 IT Incident SLA Breach Analysis (Python Project)
+## IT Incident SLA Breach Analysis (Python)
 
 ### Overview  
-This project looks at IT incident data (ServiceNow-style logs) to find out where and why SLA breaches happen.  
+This project looks at ServiceNow IT incident management data to find out where and why SLA breaches happen.  
 It also checks if ticket priority, handle time, and workload have any link to delays.  
 The goal is to help teams reduce breach rates and improve response time.
 
@@ -10,7 +10,7 @@ The goal is to help teams reduce breach rates and improve response time.
 ### Tools & Libraries  
 - **Python:** Pandas, Matplotlib, Seaborn, Statsmodels, Scipy  
 - **Jupyter Notebook**  
-- **Dataset:** IT Incident Log (Kaggle, ServiceNow-inspired)
+- **Dataset:** IT Incident Log (Kaggle, ServiceNow)
 
 ---
 
