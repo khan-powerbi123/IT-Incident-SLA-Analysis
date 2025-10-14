@@ -35,8 +35,8 @@ The goal is to help teams reduce breach rates and improve response time.
 
 ### 📈 Main Insights  
 - **SLA breach rate:** 60.6%  
-- **Average handle time:** 409 hours (~17 days)  
-- **Max handle time:** 8,190 hours (~341 days)  
+- **Average handle time:** 409 hours (17 days)  
+- **Max handle time:** 8,190 hours (341 days)  
 - Reassignments and long handle times both increase SLA breach chances  
 - Some assignment groups have breach rates above 90%  
 
