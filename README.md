@@ -1,59 +1,56 @@
-## ServiceNow IT Incident SLA Breach Analysis (Python)
+# ServiceNow IT Incident SLA Breach Analysis (Python + Power BI)
 
-### Overview  
-This project looks at ServiceNow IT incident management data to find out where and why SLA breaches happen.  
-It also checks if ticket priority, handle time, and workload have any link to delays.  
-The goal is to help teams reduce breach rates and improve response time.
+## 🧾 Project Overview  
+This project analyzes **IT incident management data from ServiceNow (via Kaggle)** to identify where and why SLA breaches occur and how they can be reduced.  
+It combines **statistical validation (Z-Test, ANOVA)** in Python with **interactive executive dashboards in Power BI**, offering a complete end-to-end data analytics case study for IT leadership.
 
 ---
 
 ### Tools & Libraries  
-- **Python:** Pandas, Matplotlib, Seaborn, Statsmodels, Scipy  
-- **Jupyter Notebook**  
-- **Dataset:** IT Incident Log (Kaggle, ServiceNow)
+- **Python**: Pandas · NumPy · Matplotlib · Seaborn · Statsmodels · SciPy  
+- **Jupyter Notebook**: Interactive analysis, EDA, and hypothesis testing  
+- **Power BI**: DAX · KPI/Trend Cards · Donut Charts · Correlation Matrix · Statistical Validation Gauges  
+- **Dataset**: ServiceNow IT Incident Log (Kaggle), includes priorities, categories, handle time, and assignments  
+
 
 ---
 
-### Project Steps  
-1. **Data Cleaning:** Parsed dates, dropped missing values, and ran basic data checks  
-2. **Feature Creation:** Calculated handle time (in hours), SLA breach flag, and ticket month  
-3. **Exploratory Analysis:** Analyzed breach rates by priority, category, and assignment group  
-4. **Statistical Tests:**  
-   - Two-proportion Z-test → compared SLA breaches (High vs Low priority)  
-   - One-way ANOVA → compared average handle times across all priorities  
-5. **Trend & Correlation:** Checked monthly SLA breach trend and correlations between variables  
-6. **Key Metrics & Insights:** Found main areas causing delays and suggested improvement ideas
+### Project Flow  
+1. **Data Preparation** – Loaded the incident CSV, parsed/cleaned dates, removed nulls, and calculated handle time (in hours).  
+2. **Feature Engineering** – Created SLA breach flags, ticket priority categories, and reassignment counts.  
+3. **Exploratory Data Analysis** – Examined breach vs compliance patterns, handle time distributions, and correlations.  
+4. **Statistical Testing** –  
+   - Ran *Z-Test* on SLA breach by priority (High vs Low).  
+   - Ran *ANOVA* on handle time across multiple priorities.  
+5. **Dashboard Design (Power BI)** – Built a 3-page Power BI report showing:  
+   - Executive KPIs & breach trend  
+   - Efficiency and group-level insights  
+   - Statistical confidence and benchmark gauges  
 
 ---
 
-### Dataset Info  
-- Around **140,000+** incident records  
+### Dataset Summary  
+- **140,000+** incident records  
 - Key columns:  
   `priority`, `category`, `assignment_group`, `opened_at`, `closed_at`, `handle_time_hours`, `sla_breached`, `reassignment_count`
 
 ---
 
-### 📈 Main Insights  
-- **SLA breach rate:** 60.6%  
-- **Average handle time:** 409 hours (17 days)  
-- **Max handle time:** 8,190 hours (341 days)  
-- Reassignments and long handle times both increase SLA breach chances  
-- Some assignment groups have breach rates **above 90%**  
-
----
-
-### 📊 Statistical Findings  
-- **Z-Test:** No major difference in SLA breach rate between High and Low priority tickets  
-- **ANOVA:** Clear difference in average handle times across all priority levels  
+### 📈 Key Insights & Statistical Findings
+- The overall **SLA breach rate = 60.6%**, showing major compliance challenges.  
+- The most compliant month was **June (30%)** according to Power BI analysis.  
+- **Handle time varies significantly by priority (ANOVA F = 79.91, p < 0.001)**.  
+- No significant difference in SLA breach rate between high vs low priority (Z = -0.78, p = 0.44).  
+- **Moderate correlation (ρ ≈ 0.35)** between handle time and SLA breach rate → process delays are a key driver.
 
 ---
 
 ### Recommendations  
-- Rebalance work between overloaded support groups  
-- Add alerts for tickets getting close to SLA limits  
-- Review SLA limits for lower priorities  
-- Investigate tickets taking over 500 hours and remove blockers  
-- Track SLA and handle time trends monthly in a dashboard  
+- Rebalance workloads between overloaded support groups.  
+- Add proactive alerts for tickets nearing SLA limits.  
+- Review SLA thresholds for lower priorities.  
+- Investigate tickets with >500 hrs handle time to identify process blockers.  
+- Use Power BI dashboard monthly to monitor SLA and handle-time trends.
 
 ---
 
