@@ -6,7 +6,7 @@ It combines **statistical validation (Z-Test, ANOVA)** in Python with **interact
 
 ---
 
-### Tools & Libraries  
+###  🧰 Tools & Libraries  
 - **Python**: Pandas · NumPy · Matplotlib · Seaborn · Statsmodels · SciPy  
 - **Jupyter Notebook**: Interactive analysis, EDA, and hypothesis testing  
 - **Power BI**: DAX · KPI/Trend Cards · Donut Charts · Correlation Matrix · Statistical Validation Gauges  
@@ -29,7 +29,7 @@ It combines **statistical validation (Z-Test, ANOVA)** in Python with **interact
 
 ---
 
-### Dataset Summary  
+###  🗂️  Dataset Summary  
 - **Records:** 140,000+ incident records  
 - **Key columns**:  
   `priority`, `category`, `assignment_group`, `opened_at`, `closed_at`, `handle_time_hours`, `sla_breached`, `reassignment_count`
