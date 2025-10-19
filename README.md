@@ -30,8 +30,8 @@ It combines **statistical validation (Z-Test, ANOVA)** in Python with **interact
 ---
 
 ### Dataset Summary  
-- **140,000+** incident records  
-- Key columns:  
+- **Records:** 140,000+ incident records  
+- **Key columns**:  
   `priority`, `category`, `assignment_group`, `opened_at`, `closed_at`, `handle_time_hours`, `sla_breached`, `reassignment_count`
 
 ---
@@ -67,3 +67,5 @@ It combines **statistical validation (Z-Test, ANOVA)** in Python with **interact
 |  ![Executive Overview](visuals/Page1_ExecutiveOverview.png) | ![Efficiency Insights](visuals/Page2_BreachEfficiency.png) | ![Statistical Validation](visuals/Page3_StatisticalValidation.png) |
 
 ---
+
+👨‍💻 *Created by Shoaib Khan | Microsoft Certified Power BI Data Analyst (PL-300)*
