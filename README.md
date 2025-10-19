@@ -64,7 +64,7 @@ The goal is to help teams reduce breach rates and improve response time.
 
 ---
 
-### Power BI Dashboard Preview
+###  📊  Power BI Dashboard Preview
 | Page 1 | Page 2 | Page 3 |
 | :--: | :--: | :--: |
 |  ![Executive Overview](visuals/Page1_ExecutiveOverview.png) | ![Efficiency Insights](visuals/Page2_BreachEfficiency.png) | ![Statistical Validation](visuals/Page3_StatisticalValidation.png) |
